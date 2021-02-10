@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+
+*, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   background: #f0d7bd;
+   overflow: hidden;
+   font-family: 'Montserrat', sans-serif;
+  
+}
+
+.overlay_menu {
+    position: fixed;
+    width: 0%;
+    height: 100vh;
+    background: #242424;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay_item {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 5vw;
+    margin: 4vw;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.overlay_item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .overlay_item:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+
+.wrapper1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.plant {
+    position: absolute;
+    width: 20%;
+    height: 60vh;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    margin-top: 16vw;
+    pointer-events: none;
+    border: 0;
+    margin-left: 30vw;
+    
+}
+
+.nav-bar {
+    display: flex;
+    padding: 2.5vw;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 95%;
+   z-index: 1000;
+}
+
+.logon {
+    width: 1.8vw;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    
+}
+
+.logon:hover {
+    transform: rotate(90deg);
+}
+
+.rector {
+    font-size: 1.6vw;
+    color: aliceblue;
+    transition: 0.4s;
+}
+
+.rector:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.img11 {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.head11 {
+    position: absolute;
+    margin-bottom: 22vw;
+    color: aliceblue;
+    margin-left: 50vw;
+    margin-top: 10vw;
+    font-family: 'Playfair Display', serif;
+    font-size: 6vw;
+}
+
+.noise {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    
+    pointer-events: none;
+    opacity: .05;
+}
+
+.grids {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    background-image: linear-gradient(rgba(51, 51, 51, 0.7) .1em, transparent .1em), linear-gradient(90deg, rgba(41, 41, 41, 0.7) .1em, transparent .1em);
+   background-size: 10vw 10vw;
+   position: absolute;
+   z-index: 11;
+   filter: blur(4px);
+   opacity: 0.5;
+}
+
+.no_entry {
+    display: none;
+    pointer-events: none;
+}

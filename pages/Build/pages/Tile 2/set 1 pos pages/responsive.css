@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+    
+.no_entry {
+    background: rgb(32, 32, 32);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.no_entry > strong  {
+   color: aliceblue;
+   font-size: 6vw;
+}
+
+.no_entry > hr {
+    width: 88%;
+}
+
+.no_entry > .incov {
+    position: absolute;
+    width: 10vw;
+    margin-top: -40vw;
+}
+
+.no_entry > .text1 {
+    color: aliceblue;
+    font-size: 5vw;
+    padding: 6vw;
+    text-align: center;
+}
+
+.build_overlay {
+    display: none;
+    pointer-events: none;
+}
+
+.toolbar {
+    display: none;
+    pointer-events: none;
+
+}
+
+model-viewer {
+    display: none;
+    pointer-events: none;
+}
+
+.loading {
+    display: none;
+    pointer-events: none;
+}
+
+.wrapper {
+    display: none;
+    pointer-events: none;
+}
+}
